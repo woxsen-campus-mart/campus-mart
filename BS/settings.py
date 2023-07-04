@@ -85,9 +85,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'BS.wsgi.application'
 
-DATABASES = {
-    "default":dj_database_url.config(default=DATABASE_URL,conn_max_age=1800),
-}
+# DATABASES = {
+#     "default":dj_database_url.config(default=DATABASE_URL,conn_max_age=1800),
+# }
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -100,12 +100,12 @@ DATABASES = {
 #         'HOST': 'localhost'
 #     }
 # }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
